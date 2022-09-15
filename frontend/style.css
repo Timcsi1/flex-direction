@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+}
+body {
+  height: 100%;
+}
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: row-reverse; */
+  align-items: center;
+  flex-wrap: wrap; /* ha main containeren aktiv, ezen nem mukodik */
+}
+.columnContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.rowContainer > div,
+.columnContainer > div {
+  /*két containeren belül az összes div*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1rem;
+  width: 120px;
+  height: 120px;
+  background-color: gray;
+  border: 1px solid red;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+.rowContainer div:nth-child(1),
+.columnContainer div:nth-child(1) {
+  background-color: black;
+}
+.rowContainer div:nth-child(2),
+.columnContainer div:nth-child(2) {
+  background-color: rgb(201, 54, 54);
+}
+.rowContainer div:nth-child(3),
+.columnContainer div:nth-child(3) {
+  background-color: rgb(40, 150, 89);
+}
+.rowContainer div:nth-child(4),
+.columnContainer div:nth-child(4) {
+  background-color: rgb(46, 20, 192);
+}
+.rowContainer div:nth-child(5),
+.columnContainer div:nth-child(5) {
+  background-color: rgb(208, 241, 18);
+}
